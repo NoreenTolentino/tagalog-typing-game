@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tagalog Typing Test</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-view="test" data-state="idle">
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">T</span>
+      <div>
+        <h1>Tagalog Typing Test</h1>
+        <p>Speed and accuracy practice</p>
+      </div>
+    </div>
+    <div class="player">
+      <span class="best">Best <strong id="bestWpm">0</strong> WPM</span>
+      <label class="name-field">
+        <span>Player</span>
+        <input id="playerName" maxlength="14" autocomplete="off">
+      </label>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="controls" aria-label="Test settings">
+      <div id="modeControl" class="segmented" role="radiogroup" aria-label="Word set"></div>
+      <div id="durationControl" class="segmented" role="radiogroup" aria-label="Duration"></div>
+    </section>
+
+    <section id="test" class="test" aria-label="Typing test">
+      <div class="live">
+        <div class="stat"><span>Time</span><strong id="liveTime">30</strong></div>
+        <div class="stat"><span>WPM</span><strong id="liveWpm">0</strong></div>
+        <div class="stat"><span>Accuracy</span><strong id="liveAccuracy">100%</strong></div>
+      </div>
+
+      <div id="passage" class="passage">
+        <div class="viewport">
+          <div id="track" class="track">
+            <span id="caret" class="caret"></span>
+            <div id="words" class="words"></div>
+          </div>
+        </div>
+        <p class="focus-hint">Click here or start typing</p>
+      </div>
+      <div class="progress"><span id="progressBar"></span></div>
+
+      <div class="test-foot">
+        <button id="restart" class="btn-ghost" type="button">Restart</button>
+        <span class="hint"><kbd>Esc</kbd> to restart</span>
+      </div>
+
+      <input id="input" class="capture" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Type the words here">
+    </section>
+
+    <section id="results" class="results" aria-label="Results">
+      <div class="result-top">
+        <div class="result-wpm">
+          <span class="label">Words per minute</span>
+          <strong id="resWpm"></strong>
+        </div>
+        <div class="result-rank">
+          <span class="label">Rank</span>
+          <strong id="resRank"></strong>
+          <em id="resBest" hidden>New personal best</em>
+        </div>
+      </div>
+
+      <dl class="result-grid">
+        <div><dt>Accuracy</dt><dd id="resAccuracy"></dd></div>
+        <div><dt>Raw WPM</dt><dd id="resRaw"></dd></div>
+        <div><dt>Mistakes</dt><dd id="resMistakes"></dd></div>
+        <div><dt>Test</dt><dd id="resTest"></dd></div>
+      </dl>
+
+      <div class="chart">
+        <div class="chart-head"><span>Speed over time</span><span id="chartPeak"></span></div>
+        <svg id="chart" viewBox="0 0 600 160" preserveAspectRatio="none" role="img" aria-label="Words per minute over time"></svg>
+      </div>
+
+      <div class="result-actions">
+        <button id="again" class="btn-primary" type="button">Try again</button>
+        <span class="hint">or press <kbd>Enter</kbd></span>
+      </div>
+    </section>
+
+    <section class="board" aria-labelledby="boardTitle">
+      <div class="board-head">
+        <h2 id="boardTitle">Top scores</h2>
+        <button id="clearScores" class="link" type="button">Clear</button>
+      </div>
+      <ol id="board" class="board-list"></ol>
+      <p id="boardEmpty" class="empty">No scores yet. Take your first test.</p>
+    </section>
+  </main>
+
+  <footer class="footer">Scores are saved in this browser only.</footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
