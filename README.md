@@ -2,7 +2,7 @@
 
 A typing test built with HTML, CSS, and JavaScript. Practice with Filipino words, Taglish, or traditional proverbs and track your speed over time.
 
-**Live preview:**
+**Live Site:**
 
 ## Features
 
