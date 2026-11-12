@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tagalog Typing Test</title>
+  <title>Tagalog Typing Game</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-view="test" data-state="idle">
@@ -11,7 +11,7 @@
     <div class="brand">
       <span class="mark" aria-hidden="true">T</span>
       <div>
-        <h1>Tagalog Typing Test</h1>
+        <h1>Tagalog Typing Game</h1>
         <p>Speed and accuracy practice</p>
       </div>
     </div>
@@ -21,6 +21,7 @@
         <span>Player</span>
         <input id="playerName" maxlength="14" autocomplete="off">
       </label>
+      <button id="themeToggle" class="btn-ghost" type="button"></button>
     </div>
   </header>
 
@@ -81,9 +82,31 @@
         <svg id="chart" viewBox="0 0 600 160" preserveAspectRatio="none" role="img" aria-label="Words per minute over time"></svg>
       </div>
 
+      <div id="insights" class="insights" hidden>
+        <div class="insights-head"><span>Keys to practice</span><span class="hint">Your most missed characters</span></div>
+        <ul id="weakKeys" class="weak-keys"></ul>
+      </div>
+
       <div class="result-actions">
         <button id="again" class="btn-primary" type="button">Try again</button>
         <span class="hint">or press <kbd>Enter</kbd></span>
+      </div>
+    </section>
+
+    <section class="growth" aria-labelledby="growthTitle">
+      <div class="board-head"><h2 id="growthTitle">Your progress</h2></div>
+      <p id="progEmpty" class="empty">Finish a test to start tracking your progress.</p>
+      <div id="progBody" class="prog-body" hidden>
+        <dl class="prog-stats">
+          <div><dt>Tests taken</dt><dd id="progTests"></dd></div>
+          <div><dt>Average, last 10</dt><dd id="progAverage"></dd></div>
+          <div><dt>Best</dt><dd id="progBest"></dd></div>
+          <div><dt>Time typed</dt><dd id="progTime"></dd></div>
+        </dl>
+        <div class="prog-chart">
+          <div id="progBars" class="pbars"></div>
+          <p class="hint">Last 20 tests, in WPM</p>
+        </div>
       </div>
     </section>
 
