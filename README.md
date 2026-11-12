@@ -2,7 +2,7 @@
 
 A typing test built with HTML, CSS, and JavaScript. Practice with Filipino words, Taglish, or traditional proverbs and track your speed over time.
 
-**Live preview:** [https://your-username.github.io/tagalog-typing-game/](https://your-username.github.io/tagalog-typing-game/)
+**Live preview:**
 
 ## Features
 
