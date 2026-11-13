@@ -1,15 +1,15 @@
-# Tagalog Typing Game
+# Typing Speed Test
 
-A typing test built with HTML, CSS, and JavaScript. Practice with Filipino words, Taglish, or traditional proverbs and track your speed over time.
+A typing test built with HTML, CSS, and JavaScript. Practice with common words, advanced vocabulary, or classic proverbs and track your speed over time.
 
-**Live preview:** [https://your-username.github.io/tagalog-typing-game/](https://your-username.github.io/tagalog-typing-game/)
+**Live preview:** 
 
 ## Features
 
-- Three word sets: Salita (Tagalog words), Taglish, and Salawikain (proverbs)
+- Three word sets: Common words, Advanced vocabulary, and Proverbs
 - 15 second, 30 second, 1 minute, and 2 minute tests
 - Live timer, WPM, and accuracy
-- Results with raw WPM, mistakes, a speed-over-time chart, and a rank (Baguhan to Alamat)
+- Results with raw WPM, mistakes, a speed-over-time chart, and a rank (Beginner to Elite)
 - Keys to practice: shows the characters you miss most
 - Progress tracking across sessions: average speed, best, time typed, and a history chart
 - Light and dark themes
@@ -23,3 +23,19 @@ WPM counts correctly typed characters divided by five, per minute. Accuracy is t
 ## Run locally
 
 The app uses ES modules, so serve the folder with a static server such as the VS Code Live Server extension.
+
+## Project structure
+
+```
+typing-speed-test/
+├── index.html
+├── css/style.css
+└── js/
+    ├── app.js
+    ├── config.js
+    ├── engine.js
+    ├── render.js
+    ├── storage.js
+    ├── utils.js
+    └── words.js
+```
