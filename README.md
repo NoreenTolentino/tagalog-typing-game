@@ -2,7 +2,7 @@
 
 A typing test built with HTML, CSS, and JavaScript. Practice with common words, advanced vocabulary, or classic proverbs and track your speed over time.
 
-**Live preview:**
+**Live Site:**  https://noreentolentino.github.io/tagalog-typing-game/
 
 ## Features
 
