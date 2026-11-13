@@ -2,11 +2,8 @@
 
 A typing test built with HTML, CSS, and JavaScript. Practice with common words, advanced vocabulary, or classic proverbs and track your speed over time.
 
-<<<<<<< HEAD
-**Live preview:** 
-=======
 **Live Site:**
->>>>>>> 02dd855ebaba6decc67a29d9f8b2faa83deb499b
+
 
 ## Features
 
@@ -27,19 +24,3 @@ WPM counts correctly typed characters divided by five, per minute. Accuracy is t
 ## Run locally
 
 The app uses ES modules, so serve the folder with a static server such as the VS Code Live Server extension.
-
-## Project structure
-
-```
-typing-speed-test/
-├── index.html
-├── css/style.css
-└── js/
-    ├── app.js
-    ├── config.js
-    ├── engine.js
-    ├── render.js
-    ├── storage.js
-    ├── utils.js
-    └── words.js
-```
