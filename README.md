@@ -2,7 +2,11 @@
 
 A typing test built with HTML, CSS, and JavaScript. Practice with common words, advanced vocabulary, or classic proverbs and track your speed over time.
 
+<<<<<<< HEAD
 **Live preview:** 
+=======
+**Live Site:**
+>>>>>>> 02dd855ebaba6decc67a29d9f8b2faa83deb499b
 
 ## Features
 
